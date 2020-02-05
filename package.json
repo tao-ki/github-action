@@ -1,7 +1,6 @@
 {
   "name": "github-action",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/tao-ki/github-action/issues"
   },
-  "homepage": "https://github.com/tao-ki/github-action#readme"
+  "homepage": "https://github.com/tao-ki/github-action#readme",
+  "description": "",
+  "dependencies": {
+    "@actions/core": "^1.2.2",
+    "@actions/github": "^2.1.0"
+  }
 }
