@@ -1,0 +1,19 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Hello world
+        id: hello
+        uses: ./.github/actions/hello-world
+        with:
+          who-to-greet: 'hoge'
+      - name: Output time
+        run: echo "おしまい ${{ steps.hello.outputs.time }}"
